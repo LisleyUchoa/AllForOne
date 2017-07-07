@@ -1,0 +1,66 @@
+<ion-header >
+  <ion-toolbar color="medico">
+    <ion-title>
+      Register
+    </ion-title>
+      <button ion-button  menuToggle color="light">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding class="conteudo">
+  <div class="namem">
+  <ion-item>
+    <ion-input type="text" placeholder="Name:" [(ngModel)]="name"></ion-input>
+</ion-item>
+</div>
+<div class="categoriam">
+  <ion-item>
+  <ion-label>Categoria</ion-label>
+  <ion-select [(ngModel)]="Categoria">
+    <ion-option value="a">Acupuntura	</ion-option>
+    <ion-option value="b">Alergia</ion-option>
+    <ion-option value="c">Angiologia	</ion-option>
+    <ion-option value="d">Cardiologia	</ion-option>
+    <ion-option value="e">Clínica Geral	</ion-option>
+    <ion-option value="f"> Coloproctologia</ion-option>
+    <ion-option value="g">Dermatologia		</ion-option>
+    <ion-option value="h"> Endocrinologia	 	</ion-option>
+    <ion-option value="i">Fisiatria	</ion-option>
+    <ion-option value="j">Fisioterapia	 </ion-option>
+    <ion-option value="l">Fonoaudiologia</ion-option>
+    <ion-option value="m">Gastroenterologia	</ion-option>
+    <ion-option value="n">Geriatria</ion-option>
+    <ion-option value="o">  Homeopatia	</ion-option>
+    <ion-option value="p">Infectologia	 	</ion-option>
+    <ion-option value="q"> Nefrologia		 	</ion-option>
+    <ion-option value="r"> Nutrição</ion-option>
+    <ion-option value="s">Nutrologia	</ion-option>
+    <ion-option value="t">Odontologia	</ion-option>
+    <ion-option value="u"> Oftalmologia	</ion-option>
+    <ion-option value="v">Oncologia	</ion-option>
+    <ion-option value="x"> Ortopedia e Traumatologia</ion-option>
+    <ion-option value="w">Otorrinolaringologia			</ion-option>
+    <ion-option value="y">  Pediatria	 	</ion-option>
+    <ion-option value="z">Pneumologia</ion-option>
+    <ion-option value="aa">Psicologia </ion-option>
+    <ion-option value="ab">Psicopedagogia	 </ion-option>
+    <ion-option value="ac">Psiquiatria		</ion-option>
+    <ion-option value="ad"> Psiquiatria	</ion-option>
+    <ion-option value="ae">  Reumatologia	</ion-option>
+    <ion-option value="af">Urologia 	</ion-option>
+  </ion-select>
+</ion-item>
+</div>
+<div class="endereco">
+<ion-item>
+  <ion-input type="text" placeholder="Endereço:" [(ngModel)]="endereco"></ion-input>
+</ion-item>
+</div>
+<div class="phone">
+<ion-item>
+  <ion-input type="text" placeholder="Phone:" [(ngModel)]="phone"></ion-input>
+</ion-item>
+</div>
+  <button  ion-button block outline color="light"  >Enviar</button>
+</ion-content>

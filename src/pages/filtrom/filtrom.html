@@ -1,0 +1,129 @@
+<ion-header >
+  <ion-toolbar color="medico">
+    <ion-title>
+    Filtrar
+    </ion-title>
+      <button ion-button  menuToggle color="light">
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-toolbar>
+</ion-header>
+<ion-content padding class="filtram" >
+  <div class="paism">
+    <ion-item>
+    <ion-label>País</ion-label>
+    <ion-select [(ngModel)]="pais">
+      <ion-option value="a">Bar	</ion-option>
+      <ion-option value="b">Cinema</ion-option>
+      <ion-option value="c">Rua	</ion-option>
+      <ion-option value="d">Bairro	</ion-option>
+      <ion-option value="e">Cidade	</ion-option>
+      <ion-option value="f"> Estado</ion-option>
+      <ion-option value="g">País	</ion-option>
+      <ion-option value="h"> Teatro	 	</ion-option>
+      <ion-option value="i">Parque	</ion-option>
+      <ion-option value="j">Academia	 </ion-option>
+      <ion-option value="l">Restaurante</ion-option>
+      <ion-option value="m">Praça	</ion-option>
+      <ion-option value="n">Salão de Beleza</ion-option>
+      <ion-option value="o">  Casa de show	</ion-option>
+      <ion-option value="p">Universidade 	</ion-option>
+      <ion-option value="q"> Escola	 	</ion-option>
+      <ion-option value="r"> Shopping</ion-option>
+      <ion-option value="s">Loja</ion-option>
+      <ion-option value="t">Livraria</ion-option>
+    </ion-select>
+  </ion-item>
+  </div>
+  <div class="estadom">
+    <ion-item>
+    <ion-label>Estado</ion-label>
+    <ion-select [(ngModel)]="estado">
+      <ion-option value="a">Bar	</ion-option>
+      <ion-option value="b">Cinema</ion-option>
+      <ion-option value="c">Rua	</ion-option>
+      <ion-option value="d">Bairro	</ion-option>
+      <ion-option value="e">Cidade	</ion-option>
+      <ion-option value="f"> Estado</ion-option>
+      <ion-option value="g">País	</ion-option>
+      <ion-option value="h"> Teatro	 	</ion-option>
+      <ion-option value="i">Parque	</ion-option>
+      <ion-option value="j">Academia	 </ion-option>
+      <ion-option value="l">Restaurante</ion-option>
+      <ion-option value="m">Praça	</ion-option>
+      <ion-option value="n">Salão de Beleza</ion-option>
+      <ion-option value="o">  Casa de show	</ion-option>
+      <ion-option value="p">Universidade 	</ion-option>
+      <ion-option value="q"> Escola	 	</ion-option>
+      <ion-option value="r"> Shopping</ion-option>
+      <ion-option value="s">Loja</ion-option>
+      <ion-option value="t">Livraria</ion-option>
+    </ion-select>
+  </ion-item>
+  </div>
+  <div class="cidadem">
+    <ion-item>
+    <ion-label>Cidade</ion-label>
+    <ion-select [(ngModel)]="cidade">
+      <ion-option value="a">Bar	</ion-option>
+      <ion-option value="b">Cinema</ion-option>
+      <ion-option value="c">Rua	</ion-option>
+      <ion-option value="d">Bairro	</ion-option>
+      <ion-option value="e">Cidade	</ion-option>
+      <ion-option value="f"> Estado</ion-option>
+      <ion-option value="g">País	</ion-option>
+      <ion-option value="h"> Teatro	 	</ion-option>
+      <ion-option value="i">Parque	</ion-option>
+      <ion-option value="j">Academia	 </ion-option>
+      <ion-option value="l">Restaurante</ion-option>
+      <ion-option value="m">Praça	</ion-option>
+      <ion-option value="n">Salão de Beleza</ion-option>
+      <ion-option value="o">  Casa de show	</ion-option>
+      <ion-option value="p">Universidade 	</ion-option>
+      <ion-option value="q"> Escola	 	</ion-option>
+      <ion-option value="r"> Shopping</ion-option>
+      <ion-option value="s">Loja</ion-option>
+      <ion-option value="t">Livraria</ion-option>
+    </ion-select>
+  </ion-item>
+  </div>
+  <div class="categorias">
+    <ion-item>
+    <ion-label>Categoria</ion-label>
+    <ion-select [(ngModel)]="categoria">
+      <ion-option value="a">Acupuntura	</ion-option>
+      <ion-option value="b">Alergia</ion-option>
+      <ion-option value="c">Angiologia	</ion-option>
+      <ion-option value="d">Cardiologia	</ion-option>
+      <ion-option value="e">Clínica Geral	</ion-option>
+      <ion-option value="f"> Coloproctologia</ion-option>
+      <ion-option value="g">Dermatologia		</ion-option>
+      <ion-option value="h"> Endocrinologia	 	</ion-option>
+      <ion-option value="i">Fisiatria	</ion-option>
+      <ion-option value="j">Fisioterapia	 </ion-option>
+      <ion-option value="l">Fonoaudiologia</ion-option>
+      <ion-option value="m">Gastroenterologia	</ion-option>
+      <ion-option value="n">Geriatria</ion-option>
+      <ion-option value="o">  Homeopatia	</ion-option>
+      <ion-option value="p">Infectologia	 	</ion-option>
+      <ion-option value="q"> Nefrologia		 	</ion-option>
+      <ion-option value="r"> Nutrição</ion-option>
+      <ion-option value="s">Nutrologia	</ion-option>
+      <ion-option value="t">Odontologia	</ion-option>
+      <ion-option value="u"> Oftalmologia	</ion-option>
+      <ion-option value="v">Oncologia	</ion-option>
+      <ion-option value="x"> Ortopedia e Traumatologia</ion-option>
+      <ion-option value="w">Otorrinolaringologia			</ion-option>
+      <ion-option value="y">  Pediatria	 	</ion-option>
+      <ion-option value="z">Pneumologia</ion-option>
+      <ion-option value="aa">Psicologia </ion-option>
+      <ion-option value="ab">Psicopedagogia	 </ion-option>
+      <ion-option value="ac">Psiquiatria		</ion-option>
+      <ion-option value="ad"> Psiquiatria	</ion-option>
+      <ion-option value="ae">  Reumatologia	</ion-option>
+      <ion-option value="af">Urologia 	</ion-option>
+    </ion-select>
+  </ion-item>
+  </div>
+  <button  ion-button block outline color="light"  >Enviar</button>
+</ion-content>

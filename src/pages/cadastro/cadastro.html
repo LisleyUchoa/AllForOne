@@ -1,0 +1,49 @@
+<ion-content  class="fundo">
+
+  <ion-navbar  color="voltar">
+      <div class="logohorizontal"></div>
+  </ion-navbar>
+
+    <ion-card-header class="cads">
+          Register
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list no-line>
+        <div class="cadastro name">
+            <ion-item>
+              <ion-input type="text" placeholder="Name:" [(ngModel)]="user.name"></ion-input>
+            </ion-item>
+        </div>
+        <div class="cadastro Email">
+            <ion-item>
+              <ion-input type="text" placeholder="Email:" [(ngModel)]="user.email"></ion-input>
+            </ion-item>
+        </div>
+        <div class="cadastro password">
+            <ion-item>
+              <ion-input type="password" placeholder="Password:" [(ngModel)]="user.password"></ion-input>
+            </ion-item>
+        </div>
+        <div class="cadastro conpassword">
+            <ion-item>
+              <ion-input type="password" placeholder="Confirm Password:" [(ngModel)]="passwordConfirmation"></ion-input>
+            </ion-item>
+        </div>
+        <label>How do you identify yourself??</label>
+
+        <ion-list radio-group [(ngModel)] = "user.gender">
+          <ion-item class="check1" >
+            <ion-label>Women</ion-label>
+            <ion-radio  value="FEMALE"  color="dark"></ion-radio>
+         </ion-item>
+         <ion-item class="check2" >
+           <ion-label>Man</ion-label>
+           <ion-radio value="MALE" color="dark" (click)="showAlert()"></ion-radio>
+         </ion-item>
+       </ion-list>
+
+        <button class="botao" ion-button block outline color="light"  (click)="signup()" >Sign up <ion-spinner [color]="white" style="margin-left: 5px"*ngIf="loading"></ion-spinner></button>
+
+      </ion-list>
+    </ion-card-content>
+</ion-content>
